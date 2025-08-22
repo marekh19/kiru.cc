@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kiru-api",
+  "main": "src/worker.ts",
+  "compatibility_date": "2025-08-22",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "kiru-db",
+      "database_id": "62ba2825-5cb9-40c0-b966-79f2d205450f",
+      "migrations_dir": "drizzle",
+    },
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "CACHE",
+      "id": "3051d74a85bf4a5796a357a0005abfa3",
+    },
+  ],
+  "vars": {
+    "DEFAULT_DOMAIN": "api.kiru.cc",
+    "CODE_LENGTH": 7,
+  },
+}
